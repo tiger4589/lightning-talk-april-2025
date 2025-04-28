@@ -1,0 +1,9 @@
+<h2>Get Note</h2>
+<label>Note ID:</label>
+<input type="number" #idInput />
+<button (click)="getNote(idInput.value)">Get Note</button>
+<div *ngIf="note">
+  <h3>{{ note.title }}</h3>
+  <p>{{ note.content }}</p>
+  <small>Created: {{ note.dateCreated }}</small>
+</div>

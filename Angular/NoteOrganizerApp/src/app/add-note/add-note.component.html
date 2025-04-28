@@ -1,0 +1,10 @@
+<h2>Add Note</h2>
+<form (submit)="addNote(titleInput.value, contentInput.value)">
+  <label>Title:</label>
+  <input type="text" #titleInput required />
+  <br />
+  <label>Content:</label>
+  <textarea #contentInput required></textarea>
+  <br />
+  <button type="submit">Add Note</button>
+</form>

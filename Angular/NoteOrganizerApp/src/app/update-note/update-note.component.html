@@ -1,0 +1,13 @@
+<h2>Update Note</h2>
+<form (submit)="updateNote(idInput.value, titleInput.value, contentInput.value)">
+  <label>Note ID:</label>
+  <input type="number" #idInput required />
+  <br />
+  <label>Title:</label>
+  <input type="text" #titleInput required />
+  <br />
+  <label>Content:</label>
+  <textarea #contentInput required></textarea>
+  <br />
+  <button type="submit">Update Note</button>
+</form>
